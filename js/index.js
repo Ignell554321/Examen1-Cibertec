@@ -66,6 +66,7 @@ class empleado{
     dni='';
     cargo='';
     calificacion=0;
+    tiempoServicio=0;
 
 }
 
@@ -76,34 +77,88 @@ e1.nombre='Jorge';
 e1.apellido='Castillo';
 e1.cargo='Operador de maquinaria pesada';
 e1.calificacion=6;
+e1.tiempoServicio=4;
 
 let e2=new empleado();
 e2.nombre='Luis';
 e2.apellido='Cordova';
 e2.cargo='Operador de maquinaria pesada';
-e2.calificacion=8;
+e2.calificacion=6;
+e2.tiempoServicio=8;
 
 let e3=new empleado();
 e3.nombre='Alexia';
 e3.apellido='Vargas';
 e3.cargo='Operadora de maquinaria pesada';
 e3.calificacion=3;
+e3.tiempoServicio=7;
 
 let e4=new empleado();
 e4.nombre='Marieli';
 e4.apellido='Castro';
 e4.cargo='Operadora de maquinaria pesada';
-e4.calificacion=5;
+e4.calificacion=10;
+e4.tiempoServicio=2;
 
 empleados.push(e1);
 empleados.push(e2);
 empleados.push(e3);
 empleados.push(e4);
 
-
 //MAYOR CALIFICACION
+const mayorCalificacion=(ope)=>{
 
-console.log(empleados.forEach(e=> { e.calificacion}));
+     ope.forEach(e=> {
+        if(e.calificacion==10){
+            ope.shift();
+        }
+    } );
+
+    console.log(ope);
+
+}
+
+//MAS DE 5 AÑOS DE SERVICIO
+const mayor5=(ope)=>{
+
+   console.log( 
+    
+    ope.filter(e=> {
+       if(e.tiempoServicio>5){
+           return e;
+       }
+   } )
+   );
+
+
+}
+
+//CALIFICACION MAYOR A 7
+const calificacionMayor7=(ope)=>{
+
+   let res= ope.filter(e=> {
+       if(e.calificacion>7){
+           return e;
+       }
+        } );
+
+   console.log(res);
+
+}
+
+mayorCalificacion([...empleados]);
+
+mayor5([...empleados]);
+
+calificacionMayor7([...empleados]);
+
+
+
+
+
+
+
+
 
 
 
