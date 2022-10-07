@@ -1,0 +1,53 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Celular Galaxy S8",
+      "precio": 800,
+      "modelo": "2022",
+      "categoria": "Telefonia"
+    },
+    {
+      "id": 2,
+      "nombre": "Teclado HP",
+      "precio": 200,
+      "modelo": "2020",
+      "categoria": "Computo"
+    },
+    {
+      "id": 3,
+      "nombre": "Audifonos Sony con cancelacion de ruido",
+      "precio": 1200,
+      "modelo": "2022",
+      "categoria": "Audio"
+    },
+    {
+      "id": 4,
+      "nombre": "LED 65 pulgadas SONY",
+      "precio": 5500,
+      "modelo": "2022",
+      "categoria": "Televisor"
+    },
+    {
+      "id": 5,
+      "nombre": "Mouse inalambrico HP",
+      "precio": 150,
+      "modelo": "2022",
+      "categoria": "Computo"
+    },
+    {
+      "id": 5,
+      "nombre": "Celular Huawei",
+      "precio": 900,
+      "modelo": "2022",
+      "categoria": "Telefonia"
+    },
+    {
+      "id": 6,
+      "nombre": "Disco Duro externo de 1TB",
+      "precio": 150,
+      "modelo": "2020",
+      "categoria": "Computo"
+    }
+  ]
+}
